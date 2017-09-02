@@ -1,0 +1,917 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		09A3BBCF86C8543AC7435D76 /* Pods_DiabetesWellnessUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DECCBB5953FD5A526597FCD7 /* Pods_DiabetesWellnessUITests.framework */; };
+		210407031F15484800E39C88 /* IQNSArray+Sort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210406ED1F15484800E39C88 /* IQNSArray+Sort.swift */; };
+		210407041F15484800E39C88 /* IQUIScrollView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210406EE1F15484800E39C88 /* IQUIScrollView+Additions.swift */; };
+		210407051F15484800E39C88 /* IQUITextFieldView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210406EF1F15484800E39C88 /* IQUITextFieldView+Additions.swift */; };
+		210407061F15484800E39C88 /* IQUIView+Hierarchy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210406F01F15484800E39C88 /* IQUIView+Hierarchy.swift */; };
+		210407071F15484800E39C88 /* IQUIViewController+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210406F11F15484800E39C88 /* IQUIViewController+Additions.swift */; };
+		210407081F15484800E39C88 /* IQUIWindow+Hierarchy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210406F21F15484800E39C88 /* IQUIWindow+Hierarchy.swift */; };
+		210407091F15484800E39C88 /* IQKeyboardManagerConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210406F41F15484800E39C88 /* IQKeyboardManagerConstants.swift */; };
+		2104070A1F15484800E39C88 /* IQKeyboardManagerConstantsInternal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210406F51F15484800E39C88 /* IQKeyboardManagerConstantsInternal.swift */; };
+		2104070B1F15484800E39C88 /* IQKeyboardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210406F61F15484800E39C88 /* IQKeyboardManager.swift */; };
+		2104070C1F15484800E39C88 /* IQKeyboardReturnKeyHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210406F81F15484800E39C88 /* IQKeyboardReturnKeyHandler.swift */; };
+		2104070D1F15484800E39C88 /* IQTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210406FA1F15484800E39C88 /* IQTextView.swift */; };
+		2104070E1F15484800E39C88 /* IQBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210406FC1F15484800E39C88 /* IQBarButtonItem.swift */; };
+		2104070F1F15484800E39C88 /* IQPreviousNextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210406FD1F15484800E39C88 /* IQPreviousNextView.swift */; };
+		210407101F15484800E39C88 /* IQTitleBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210406FE1F15484800E39C88 /* IQTitleBarButtonItem.swift */; };
+		210407111F15484800E39C88 /* IQToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210406FF1F15484800E39C88 /* IQToolbar.swift */; };
+		210407121F15484800E39C88 /* IQUIView+IQKeyboardToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210407001F15484800E39C88 /* IQUIView+IQKeyboardToolbar.swift */; };
+		210407131F15484800E39C88 /* IQKeyboardManager.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 210407021F15484800E39C88 /* IQKeyboardManager.bundle */; };
+		210407311F154C4500E39C88 /* FoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210407301F154C4500E39C88 /* FoodViewController.swift */; };
+		210407331F154FC800E39C88 /* BadFoodVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210407321F154FC800E39C88 /* BadFoodVC.swift */; };
+		213F89751F1555410089943B /* GoodFoodVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213F89741F1555410089943B /* GoodFoodVC.swift */; };
+		219F683B1F1552E6001B95CE /* NeutralFoodVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219F683A1F1552E6001B95CE /* NeutralFoodVC.swift */; };
+		21DBCBF61F15574B00F6192D /* ShareVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DBCBF51F15574B00F6192D /* ShareVC.swift */; };
+		6555D3D61F0FEC4D0040CF6E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6555D3D51F0FEC4D0040CF6E /* AppDelegate.swift */; };
+		6555D3D81F0FEC4D0040CF6E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6555D3D71F0FEC4D0040CF6E /* ViewController.swift */; };
+		6555D3DB1F0FEC4D0040CF6E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6555D3D91F0FEC4D0040CF6E /* Main.storyboard */; };
+		6555D3DD1F0FEC4D0040CF6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6555D3DC1F0FEC4D0040CF6E /* Assets.xcassets */; };
+		6555D3E01F0FEC4D0040CF6E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6555D3DE1F0FEC4D0040CF6E /* LaunchScreen.storyboard */; };
+		6555D3EB1F0FEC4E0040CF6E /* DiabetesWellnessTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6555D3EA1F0FEC4E0040CF6E /* DiabetesWellnessTests.swift */; };
+		6555D3F61F0FEC4E0040CF6E /* DiabetesWellnessUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6555D3F51F0FEC4E0040CF6E /* DiabetesWellnessUITests.swift */; };
+		AF513C8B359A3C0940AA56B9 /* Pods_DiabetesWellness.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 598FDD7941B1583D68C79A0D /* Pods_DiabetesWellness.framework */; };
+		D13F4FF41F15073E00BB59D6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D13F4FF31F15073E00BB59D6 /* GoogleService-Info.plist */; };
+		D1A788A91F150BB50027A876 /* RecordPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A788A81F150BB50027A876 /* RecordPageViewController.swift */; };
+		D1A788AB1F150BC80027A876 /* TrackPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A788AA1F150BC80027A876 /* TrackPageViewController.swift */; };
+		D1A788AD1F150E480027A876 /* ActivityButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A788AC1F150E480027A876 /* ActivityButtonViewController.swift */; };
+		D1A788AF1F150E5C0027A876 /* MedsButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A788AE1F150E5C0027A876 /* MedsButtonViewController.swift */; };
+		D1A788B11F150E7A0027A876 /* GlucoseTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A788B01F150E7A0027A876 /* GlucoseTabViewController.swift */; };
+		D1A788B31F150E890027A876 /* ActivityTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A788B21F150E890027A876 /* ActivityTabViewController.swift */; };
+		D1A788B51F150E9A0027A876 /* WeightTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A788B41F150E9A0027A876 /* WeightTabViewController.swift */; };
+		E249E4DCBFD85394B9489651 /* Pods_DiabetesWellnessTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B50393061EE3C597689BB9E3 /* Pods_DiabetesWellnessTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6555D3E71F0FEC4E0040CF6E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6555D3CA1F0FEC4D0040CF6E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6555D3D11F0FEC4D0040CF6E;
+			remoteInfo = DiabetesWellness;
+		};
+		6555D3F21F0FEC4E0040CF6E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6555D3CA1F0FEC4D0040CF6E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6555D3D11F0FEC4D0040CF6E;
+			remoteInfo = DiabetesWellness;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		14AC71964753A42C4DDD5FE9 /* Pods-DiabetesWellnessTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DiabetesWellnessTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DiabetesWellnessTests/Pods-DiabetesWellnessTests.debug.xcconfig"; sourceTree = "<group>"; };
+		210406ED1F15484800E39C88 /* IQNSArray+Sort.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQNSArray+Sort.swift"; sourceTree = "<group>"; };
+		210406EE1F15484800E39C88 /* IQUIScrollView+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQUIScrollView+Additions.swift"; sourceTree = "<group>"; };
+		210406EF1F15484800E39C88 /* IQUITextFieldView+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQUITextFieldView+Additions.swift"; sourceTree = "<group>"; };
+		210406F01F15484800E39C88 /* IQUIView+Hierarchy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQUIView+Hierarchy.swift"; sourceTree = "<group>"; };
+		210406F11F15484800E39C88 /* IQUIViewController+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQUIViewController+Additions.swift"; sourceTree = "<group>"; };
+		210406F21F15484800E39C88 /* IQUIWindow+Hierarchy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQUIWindow+Hierarchy.swift"; sourceTree = "<group>"; };
+		210406F41F15484800E39C88 /* IQKeyboardManagerConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQKeyboardManagerConstants.swift; sourceTree = "<group>"; };
+		210406F51F15484800E39C88 /* IQKeyboardManagerConstantsInternal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQKeyboardManagerConstantsInternal.swift; sourceTree = "<group>"; };
+		210406F61F15484800E39C88 /* IQKeyboardManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQKeyboardManager.swift; sourceTree = "<group>"; };
+		210406F71F15484800E39C88 /* IQKeyboardManagerSwift.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQKeyboardManagerSwift.h; sourceTree = "<group>"; };
+		210406F81F15484800E39C88 /* IQKeyboardReturnKeyHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQKeyboardReturnKeyHandler.swift; sourceTree = "<group>"; };
+		210406FA1F15484800E39C88 /* IQTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQTextView.swift; sourceTree = "<group>"; };
+		210406FC1F15484800E39C88 /* IQBarButtonItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQBarButtonItem.swift; sourceTree = "<group>"; };
+		210406FD1F15484800E39C88 /* IQPreviousNextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQPreviousNextView.swift; sourceTree = "<group>"; };
+		210406FE1F15484800E39C88 /* IQTitleBarButtonItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQTitleBarButtonItem.swift; sourceTree = "<group>"; };
+		210406FF1F15484800E39C88 /* IQToolbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQToolbar.swift; sourceTree = "<group>"; };
+		210407001F15484800E39C88 /* IQUIView+IQKeyboardToolbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQUIView+IQKeyboardToolbar.swift"; sourceTree = "<group>"; };
+		210407021F15484800E39C88 /* IQKeyboardManager.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = IQKeyboardManager.bundle; sourceTree = "<group>"; };
+		210407301F154C4500E39C88 /* FoodViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodViewController.swift; sourceTree = "<group>"; };
+		210407321F154FC800E39C88 /* BadFoodVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BadFoodVC.swift; sourceTree = "<group>"; };
+		213F89741F1555410089943B /* GoodFoodVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoodFoodVC.swift; sourceTree = "<group>"; };
+		219F683A1F1552E6001B95CE /* NeutralFoodVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NeutralFoodVC.swift; sourceTree = "<group>"; };
+		21DBCBF51F15574B00F6192D /* ShareVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareVC.swift; sourceTree = "<group>"; };
+		48A03B4029459E13BFE7C941 /* Pods-DiabetesWellnessTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DiabetesWellnessTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DiabetesWellnessTests/Pods-DiabetesWellnessTests.release.xcconfig"; sourceTree = "<group>"; };
+		4ED9A719C5FF4F59376CF4F0 /* Pods-DiabetesWellness.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DiabetesWellness.release.xcconfig"; path = "Pods/Target Support Files/Pods-DiabetesWellness/Pods-DiabetesWellness.release.xcconfig"; sourceTree = "<group>"; };
+		598FDD7941B1583D68C79A0D /* Pods_DiabetesWellness.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DiabetesWellness.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6555D3D21F0FEC4D0040CF6E /* DiabetesWellness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DiabetesWellness.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6555D3D51F0FEC4D0040CF6E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6555D3D71F0FEC4D0040CF6E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6555D3DA1F0FEC4D0040CF6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6555D3DC1F0FEC4D0040CF6E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6555D3DF1F0FEC4D0040CF6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6555D3E11F0FEC4D0040CF6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6555D3E61F0FEC4E0040CF6E /* DiabetesWellnessTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DiabetesWellnessTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6555D3EA1F0FEC4E0040CF6E /* DiabetesWellnessTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiabetesWellnessTests.swift; sourceTree = "<group>"; };
+		6555D3EC1F0FEC4E0040CF6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6555D3F11F0FEC4E0040CF6E /* DiabetesWellnessUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DiabetesWellnessUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6555D3F51F0FEC4E0040CF6E /* DiabetesWellnessUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiabetesWellnessUITests.swift; sourceTree = "<group>"; };
+		6555D3F71F0FEC4E0040CF6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6555D4031F0FF3AC0040CF6E /* DiabetesWellness.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DiabetesWellness.entitlements; sourceTree = "<group>"; };
+		A1A423B8A2ED60A32EE887B7 /* Pods-DiabetesWellness.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DiabetesWellness.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DiabetesWellness/Pods-DiabetesWellness.debug.xcconfig"; sourceTree = "<group>"; };
+		B50393061EE3C597689BB9E3 /* Pods_DiabetesWellnessTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DiabetesWellnessTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D13F4FF31F15073E00BB59D6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D1A788A81F150BB50027A876 /* RecordPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordPageViewController.swift; sourceTree = "<group>"; };
+		D1A788AA1F150BC80027A876 /* TrackPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackPageViewController.swift; sourceTree = "<group>"; };
+		D1A788AC1F150E480027A876 /* ActivityButtonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityButtonViewController.swift; sourceTree = "<group>"; };
+		D1A788AE1F150E5C0027A876 /* MedsButtonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedsButtonViewController.swift; sourceTree = "<group>"; };
+		D1A788B01F150E7A0027A876 /* GlucoseTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlucoseTabViewController.swift; sourceTree = "<group>"; };
+		D1A788B21F150E890027A876 /* ActivityTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityTabViewController.swift; sourceTree = "<group>"; };
+		D1A788B41F150E9A0027A876 /* WeightTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeightTabViewController.swift; sourceTree = "<group>"; };
+		D393E34B0C11678B6CCE9100 /* Pods-DiabetesWellnessUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DiabetesWellnessUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DiabetesWellnessUITests/Pods-DiabetesWellnessUITests.release.xcconfig"; sourceTree = "<group>"; };
+		DECCBB5953FD5A526597FCD7 /* Pods_DiabetesWellnessUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DiabetesWellnessUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DED17FED90F674E7B78F79A5 /* Pods-DiabetesWellnessUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DiabetesWellnessUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DiabetesWellnessUITests/Pods-DiabetesWellnessUITests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6555D3CF1F0FEC4D0040CF6E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF513C8B359A3C0940AA56B9 /* Pods_DiabetesWellness.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6555D3E31F0FEC4E0040CF6E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E249E4DCBFD85394B9489651 /* Pods_DiabetesWellnessTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6555D3EE1F0FEC4E0040CF6E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09A3BBCF86C8543AC7435D76 /* Pods_DiabetesWellnessUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		210406EB1F15484800E39C88 /* IQKeyboardManagerSwift */ = {
+			isa = PBXGroup;
+			children = (
+				210406EC1F15484800E39C88 /* Categories */,
+				210406F31F15484800E39C88 /* Constants */,
+				210406F61F15484800E39C88 /* IQKeyboardManager.swift */,
+				210406F71F15484800E39C88 /* IQKeyboardManagerSwift.h */,
+				210406F81F15484800E39C88 /* IQKeyboardReturnKeyHandler.swift */,
+				210406F91F15484800E39C88 /* IQTextView */,
+				210406FB1F15484800E39C88 /* IQToolbar */,
+				210407011F15484800E39C88 /* Resources */,
+			);
+			path = IQKeyboardManagerSwift;
+			sourceTree = "<group>";
+		};
+		210406EC1F15484800E39C88 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				210406ED1F15484800E39C88 /* IQNSArray+Sort.swift */,
+				210406EE1F15484800E39C88 /* IQUIScrollView+Additions.swift */,
+				210406EF1F15484800E39C88 /* IQUITextFieldView+Additions.swift */,
+				210406F01F15484800E39C88 /* IQUIView+Hierarchy.swift */,
+				210406F11F15484800E39C88 /* IQUIViewController+Additions.swift */,
+				210406F21F15484800E39C88 /* IQUIWindow+Hierarchy.swift */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		210406F31F15484800E39C88 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				210406F41F15484800E39C88 /* IQKeyboardManagerConstants.swift */,
+				210406F51F15484800E39C88 /* IQKeyboardManagerConstantsInternal.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		210406F91F15484800E39C88 /* IQTextView */ = {
+			isa = PBXGroup;
+			children = (
+				210406FA1F15484800E39C88 /* IQTextView.swift */,
+			);
+			path = IQTextView;
+			sourceTree = "<group>";
+		};
+		210406FB1F15484800E39C88 /* IQToolbar */ = {
+			isa = PBXGroup;
+			children = (
+				210406FC1F15484800E39C88 /* IQBarButtonItem.swift */,
+				210406FD1F15484800E39C88 /* IQPreviousNextView.swift */,
+				210406FE1F15484800E39C88 /* IQTitleBarButtonItem.swift */,
+				210406FF1F15484800E39C88 /* IQToolbar.swift */,
+				210407001F15484800E39C88 /* IQUIView+IQKeyboardToolbar.swift */,
+			);
+			path = IQToolbar;
+			sourceTree = "<group>";
+		};
+		210407011F15484800E39C88 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				210407021F15484800E39C88 /* IQKeyboardManager.bundle */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		26EAF39CF11E0C2FE14BE057 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				14AC71964753A42C4DDD5FE9 /* Pods-DiabetesWellnessTests.debug.xcconfig */,
+				48A03B4029459E13BFE7C941 /* Pods-DiabetesWellnessTests.release.xcconfig */,
+				A1A423B8A2ED60A32EE887B7 /* Pods-DiabetesWellness.debug.xcconfig */,
+				4ED9A719C5FF4F59376CF4F0 /* Pods-DiabetesWellness.release.xcconfig */,
+				DED17FED90F674E7B78F79A5 /* Pods-DiabetesWellnessUITests.debug.xcconfig */,
+				D393E34B0C11678B6CCE9100 /* Pods-DiabetesWellnessUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6555D3C91F0FEC4D0040CF6E = {
+			isa = PBXGroup;
+			children = (
+				210406EB1F15484800E39C88 /* IQKeyboardManagerSwift */,
+				6555D3D41F0FEC4D0040CF6E /* DiabetesWellness */,
+				6555D3E91F0FEC4E0040CF6E /* DiabetesWellnessTests */,
+				6555D3F41F0FEC4E0040CF6E /* DiabetesWellnessUITests */,
+				6555D3D31F0FEC4D0040CF6E /* Products */,
+				26EAF39CF11E0C2FE14BE057 /* Pods */,
+				6D6FE5B020DDE43CCBBE6CED /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6555D3D31F0FEC4D0040CF6E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6555D3D21F0FEC4D0040CF6E /* DiabetesWellness.app */,
+				6555D3E61F0FEC4E0040CF6E /* DiabetesWellnessTests.xctest */,
+				6555D3F11F0FEC4E0040CF6E /* DiabetesWellnessUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6555D3D41F0FEC4D0040CF6E /* DiabetesWellness */ = {
+			isa = PBXGroup;
+			children = (
+				6555D4031F0FF3AC0040CF6E /* DiabetesWellness.entitlements */,
+				6555D3D51F0FEC4D0040CF6E /* AppDelegate.swift */,
+				6555D3D71F0FEC4D0040CF6E /* ViewController.swift */,
+				6555D3D91F0FEC4D0040CF6E /* Main.storyboard */,
+				21DBCBF51F15574B00F6192D /* ShareVC.swift */,
+				D1A788B41F150E9A0027A876 /* WeightTabViewController.swift */,
+				D1A788B01F150E7A0027A876 /* GlucoseTabViewController.swift */,
+				D1A788B21F150E890027A876 /* ActivityTabViewController.swift */,
+				D1A788AC1F150E480027A876 /* ActivityButtonViewController.swift */,
+				D1A788AE1F150E5C0027A876 /* MedsButtonViewController.swift */,
+				D1A788A81F150BB50027A876 /* RecordPageViewController.swift */,
+				D1A788AA1F150BC80027A876 /* TrackPageViewController.swift */,
+				D13F4FF31F15073E00BB59D6 /* GoogleService-Info.plist */,
+				6555D3DC1F0FEC4D0040CF6E /* Assets.xcassets */,
+				6555D3DE1F0FEC4D0040CF6E /* LaunchScreen.storyboard */,
+				6555D3E11F0FEC4D0040CF6E /* Info.plist */,
+				210407301F154C4500E39C88 /* FoodViewController.swift */,
+				210407321F154FC800E39C88 /* BadFoodVC.swift */,
+				219F683A1F1552E6001B95CE /* NeutralFoodVC.swift */,
+				213F89741F1555410089943B /* GoodFoodVC.swift */,
+			);
+			path = DiabetesWellness;
+			sourceTree = "<group>";
+		};
+		6555D3E91F0FEC4E0040CF6E /* DiabetesWellnessTests */ = {
+			isa = PBXGroup;
+			children = (
+				6555D3EA1F0FEC4E0040CF6E /* DiabetesWellnessTests.swift */,
+				6555D3EC1F0FEC4E0040CF6E /* Info.plist */,
+			);
+			path = DiabetesWellnessTests;
+			sourceTree = "<group>";
+		};
+		6555D3F41F0FEC4E0040CF6E /* DiabetesWellnessUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6555D3F51F0FEC4E0040CF6E /* DiabetesWellnessUITests.swift */,
+				6555D3F71F0FEC4E0040CF6E /* Info.plist */,
+			);
+			path = DiabetesWellnessUITests;
+			sourceTree = "<group>";
+		};
+		6D6FE5B020DDE43CCBBE6CED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				598FDD7941B1583D68C79A0D /* Pods_DiabetesWellness.framework */,
+				B50393061EE3C597689BB9E3 /* Pods_DiabetesWellnessTests.framework */,
+				DECCBB5953FD5A526597FCD7 /* Pods_DiabetesWellnessUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6555D3D11F0FEC4D0040CF6E /* DiabetesWellness */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6555D3FA1F0FEC4E0040CF6E /* Build configuration list for PBXNativeTarget "DiabetesWellness" */;
+			buildPhases = (
+				1239430A89D5F95371F9A7C4 /* [CP] Check Pods Manifest.lock */,
+				6555D3CE1F0FEC4D0040CF6E /* Sources */,
+				6555D3CF1F0FEC4D0040CF6E /* Frameworks */,
+				6555D3D01F0FEC4D0040CF6E /* Resources */,
+				9C4F134B248F00081D25F2F4 /* [CP] Embed Pods Frameworks */,
+				ACBA4F82F3FCB043364201EF /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DiabetesWellness;
+			productName = DiabetesWellness;
+			productReference = 6555D3D21F0FEC4D0040CF6E /* DiabetesWellness.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6555D3E51F0FEC4E0040CF6E /* DiabetesWellnessTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6555D3FD1F0FEC4E0040CF6E /* Build configuration list for PBXNativeTarget "DiabetesWellnessTests" */;
+			buildPhases = (
+				47151445363C1FF1039D1F36 /* [CP] Check Pods Manifest.lock */,
+				6555D3E21F0FEC4E0040CF6E /* Sources */,
+				6555D3E31F0FEC4E0040CF6E /* Frameworks */,
+				6555D3E41F0FEC4E0040CF6E /* Resources */,
+				920C186B60D5959A946E5CDE /* [CP] Embed Pods Frameworks */,
+				5D3613CE0162130E4B0F58CA /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6555D3E81F0FEC4E0040CF6E /* PBXTargetDependency */,
+			);
+			name = DiabetesWellnessTests;
+			productName = DiabetesWellnessTests;
+			productReference = 6555D3E61F0FEC4E0040CF6E /* DiabetesWellnessTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6555D3F01F0FEC4E0040CF6E /* DiabetesWellnessUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6555D4001F0FEC4E0040CF6E /* Build configuration list for PBXNativeTarget "DiabetesWellnessUITests" */;
+			buildPhases = (
+				FB425EDD5CFAE169FDB6FF76 /* [CP] Check Pods Manifest.lock */,
+				6555D3ED1F0FEC4E0040CF6E /* Sources */,
+				6555D3EE1F0FEC4E0040CF6E /* Frameworks */,
+				6555D3EF1F0FEC4E0040CF6E /* Resources */,
+				F0F455195AB0403FE1663EC1 /* [CP] Embed Pods Frameworks */,
+				477E1E101E6801D60A9AF3F3 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6555D3F31F0FEC4E0040CF6E /* PBXTargetDependency */,
+			);
+			name = DiabetesWellnessUITests;
+			productName = DiabetesWellnessUITests;
+			productReference = 6555D3F11F0FEC4E0040CF6E /* DiabetesWellnessUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6555D3CA1F0FEC4D0040CF6E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = dataplustwelve;
+				TargetAttributes = {
+					6555D3D11F0FEC4D0040CF6E = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 2575ZPK33G;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+					6555D3E51F0FEC4E0040CF6E = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 2575ZPK33G;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 6555D3D11F0FEC4D0040CF6E;
+					};
+					6555D3F01F0FEC4E0040CF6E = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 2575ZPK33G;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 6555D3D11F0FEC4D0040CF6E;
+					};
+				};
+			};
+			buildConfigurationList = 6555D3CD1F0FEC4D0040CF6E /* Build configuration list for PBXProject "DiabetesWellness" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6555D3C91F0FEC4D0040CF6E;
+			productRefGroup = 6555D3D31F0FEC4D0040CF6E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6555D3D11F0FEC4D0040CF6E /* DiabetesWellness */,
+				6555D3E51F0FEC4E0040CF6E /* DiabetesWellnessTests */,
+				6555D3F01F0FEC4E0040CF6E /* DiabetesWellnessUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6555D3D01F0FEC4D0040CF6E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				210407131F15484800E39C88 /* IQKeyboardManager.bundle in Resources */,
+				6555D3E01F0FEC4D0040CF6E /* LaunchScreen.storyboard in Resources */,
+				D13F4FF41F15073E00BB59D6 /* GoogleService-Info.plist in Resources */,
+				6555D3DD1F0FEC4D0040CF6E /* Assets.xcassets in Resources */,
+				6555D3DB1F0FEC4D0040CF6E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6555D3E41F0FEC4E0040CF6E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6555D3EF1F0FEC4E0040CF6E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1239430A89D5F95371F9A7C4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		47151445363C1FF1039D1F36 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		477E1E101E6801D60A9AF3F3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DiabetesWellnessUITests/Pods-DiabetesWellnessUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5D3613CE0162130E4B0F58CA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DiabetesWellnessTests/Pods-DiabetesWellnessTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		920C186B60D5959A946E5CDE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DiabetesWellnessTests/Pods-DiabetesWellnessTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9C4F134B248F00081D25F2F4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DiabetesWellness/Pods-DiabetesWellness-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ACBA4F82F3FCB043364201EF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DiabetesWellness/Pods-DiabetesWellness-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F0F455195AB0403FE1663EC1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DiabetesWellnessUITests/Pods-DiabetesWellnessUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FB425EDD5CFAE169FDB6FF76 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6555D3CE1F0FEC4D0040CF6E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				210407081F15484800E39C88 /* IQUIWindow+Hierarchy.swift in Sources */,
+				210407041F15484800E39C88 /* IQUIScrollView+Additions.swift in Sources */,
+				D1A788AD1F150E480027A876 /* ActivityButtonViewController.swift in Sources */,
+				210407051F15484800E39C88 /* IQUITextFieldView+Additions.swift in Sources */,
+				D1A788AF1F150E5C0027A876 /* MedsButtonViewController.swift in Sources */,
+				2104070D1F15484800E39C88 /* IQTextView.swift in Sources */,
+				2104070F1F15484800E39C88 /* IQPreviousNextView.swift in Sources */,
+				D1A788B11F150E7A0027A876 /* GlucoseTabViewController.swift in Sources */,
+				2104070B1F15484800E39C88 /* IQKeyboardManager.swift in Sources */,
+				D1A788A91F150BB50027A876 /* RecordPageViewController.swift in Sources */,
+				210407101F15484800E39C88 /* IQTitleBarButtonItem.swift in Sources */,
+				213F89751F1555410089943B /* GoodFoodVC.swift in Sources */,
+				2104070E1F15484800E39C88 /* IQBarButtonItem.swift in Sources */,
+				D1A788AB1F150BC80027A876 /* TrackPageViewController.swift in Sources */,
+				21DBCBF61F15574B00F6192D /* ShareVC.swift in Sources */,
+				210407121F15484800E39C88 /* IQUIView+IQKeyboardToolbar.swift in Sources */,
+				210407061F15484800E39C88 /* IQUIView+Hierarchy.swift in Sources */,
+				D1A788B51F150E9A0027A876 /* WeightTabViewController.swift in Sources */,
+				210407331F154FC800E39C88 /* BadFoodVC.swift in Sources */,
+				210407031F15484800E39C88 /* IQNSArray+Sort.swift in Sources */,
+				210407071F15484800E39C88 /* IQUIViewController+Additions.swift in Sources */,
+				210407091F15484800E39C88 /* IQKeyboardManagerConstants.swift in Sources */,
+				D1A788B31F150E890027A876 /* ActivityTabViewController.swift in Sources */,
+				6555D3D81F0FEC4D0040CF6E /* ViewController.swift in Sources */,
+				210407311F154C4500E39C88 /* FoodViewController.swift in Sources */,
+				2104070C1F15484800E39C88 /* IQKeyboardReturnKeyHandler.swift in Sources */,
+				6555D3D61F0FEC4D0040CF6E /* AppDelegate.swift in Sources */,
+				2104070A1F15484800E39C88 /* IQKeyboardManagerConstantsInternal.swift in Sources */,
+				210407111F15484800E39C88 /* IQToolbar.swift in Sources */,
+				219F683B1F1552E6001B95CE /* NeutralFoodVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6555D3E21F0FEC4E0040CF6E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6555D3EB1F0FEC4E0040CF6E /* DiabetesWellnessTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6555D3ED1F0FEC4E0040CF6E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6555D3F61F0FEC4E0040CF6E /* DiabetesWellnessUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6555D3E81F0FEC4E0040CF6E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6555D3D11F0FEC4D0040CF6E /* DiabetesWellness */;
+			targetProxy = 6555D3E71F0FEC4E0040CF6E /* PBXContainerItemProxy */;
+		};
+		6555D3F31F0FEC4E0040CF6E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6555D3D11F0FEC4D0040CF6E /* DiabetesWellness */;
+			targetProxy = 6555D3F21F0FEC4E0040CF6E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6555D3D91F0FEC4D0040CF6E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6555D3DA1F0FEC4D0040CF6E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6555D3DE1F0FEC4D0040CF6E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6555D3DF1F0FEC4D0040CF6E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6555D3F81F0FEC4E0040CF6E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6555D3F91F0FEC4E0040CF6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6555D3FB1F0FEC4E0040CF6E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1A423B8A2ED60A32EE887B7 /* Pods-DiabetesWellness.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = DiabetesWellness/DiabetesWellness.entitlements;
+				DEVELOPMENT_TEAM = 2575ZPK33G;
+				INFOPLIST_FILE = DiabetesWellness/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = esd12.DiabetesWellness;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		6555D3FC1F0FEC4E0040CF6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4ED9A719C5FF4F59376CF4F0 /* Pods-DiabetesWellness.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = DiabetesWellness/DiabetesWellness.entitlements;
+				DEVELOPMENT_TEAM = 2575ZPK33G;
+				INFOPLIST_FILE = DiabetesWellness/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = esd12.DiabetesWellness;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		6555D3FE1F0FEC4E0040CF6E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14AC71964753A42C4DDD5FE9 /* Pods-DiabetesWellnessTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 2575ZPK33G;
+				INFOPLIST_FILE = DiabetesWellnessTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = esd12.DiabetesWellnessTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DiabetesWellness.app/DiabetesWellness";
+			};
+			name = Debug;
+		};
+		6555D3FF1F0FEC4E0040CF6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48A03B4029459E13BFE7C941 /* Pods-DiabetesWellnessTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 2575ZPK33G;
+				INFOPLIST_FILE = DiabetesWellnessTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = esd12.DiabetesWellnessTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DiabetesWellness.app/DiabetesWellness";
+			};
+			name = Release;
+		};
+		6555D4011F0FEC4E0040CF6E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DED17FED90F674E7B78F79A5 /* Pods-DiabetesWellnessUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 2575ZPK33G;
+				INFOPLIST_FILE = DiabetesWellnessUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = esd12.DiabetesWellnessUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = DiabetesWellness;
+			};
+			name = Debug;
+		};
+		6555D4021F0FEC4E0040CF6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D393E34B0C11678B6CCE9100 /* Pods-DiabetesWellnessUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 2575ZPK33G;
+				INFOPLIST_FILE = DiabetesWellnessUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = esd12.DiabetesWellnessUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = DiabetesWellness;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6555D3CD1F0FEC4D0040CF6E /* Build configuration list for PBXProject "DiabetesWellness" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6555D3F81F0FEC4E0040CF6E /* Debug */,
+				6555D3F91F0FEC4E0040CF6E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6555D3FA1F0FEC4E0040CF6E /* Build configuration list for PBXNativeTarget "DiabetesWellness" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6555D3FB1F0FEC4E0040CF6E /* Debug */,
+				6555D3FC1F0FEC4E0040CF6E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6555D3FD1F0FEC4E0040CF6E /* Build configuration list for PBXNativeTarget "DiabetesWellnessTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6555D3FE1F0FEC4E0040CF6E /* Debug */,
+				6555D3FF1F0FEC4E0040CF6E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6555D4001F0FEC4E0040CF6E /* Build configuration list for PBXNativeTarget "DiabetesWellnessUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6555D4011F0FEC4E0040CF6E /* Debug */,
+				6555D4021F0FEC4E0040CF6E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6555D3CA1F0FEC4D0040CF6E /* Project object */;
+}
