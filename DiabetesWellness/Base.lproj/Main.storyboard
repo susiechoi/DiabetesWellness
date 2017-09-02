@@ -1,0 +1,1350 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--signInPage-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController title="signInPage" id="BYZ-38-t0r" customClass="ViewController" customModule="DiabetesWellness" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="5ZH-4n-6Ho">
+                                <rect key="frame" x="16" y="212" width="343" height="210"/>
+                                <subviews>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="llo-Be-Zfh">
+                                        <rect key="frame" x="91.5" y="0.0" width="160" height="31"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="160" id="8wP-B2-aFJ"/>
+                                            <constraint firstAttribute="height" constant="30" id="z9p-it-8hI"/>
+                                        </constraints>
+                                        <segments>
+                                            <segment title="Sign In"/>
+                                            <segment title="Register"/>
+                                        </segments>
+                                        <color key="tintColor" red="0.90196078430000004" green="0.20392156859999999" blue="0.38431372549999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="signInSelectorDidChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="fjz-QC-7Fk"/>
+                                        </connections>
+                                    </segmentedControl>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="57" translatesAutoresizingMaskIntoConstraints="NO" id="mQY-y7-nVg">
+                                        <rect key="frame" x="5.5" y="60" width="332" height="30"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FXn-TT-4pm">
+                                                <rect key="frame" x="0.0" y="3.5" width="55" height="23.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="55" id="pai-eq-Tcu"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="20"/>
+                                                <color key="textColor" red="0.20000000000000001" green="0.2156862745" blue="0.27058823529999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PkV-hV-ejY">
+                                                <rect key="frame" x="112" y="0.0" width="220" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="220" id="JBf-wZ-kUs"/>
+                                                    <constraint firstAttribute="height" constant="30" id="wBc-Ef-ahW"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="R8r-s4-7a1">
+                                        <rect key="frame" x="4" y="120" width="335" height="30"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="joG-DT-BYK">
+                                                <rect key="frame" x="0.0" y="3.5" width="95" height="23.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="95" id="11H-3w-Bwd"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="20"/>
+                                                <color key="textColor" red="0.22352941179999999" green="0.22352941179999999" blue="0.2274509804" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="o3Z-Pa-zqX">
+                                                <rect key="frame" x="115" y="0.0" width="220" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="220" id="IhH-h3-3LM"/>
+                                                    <constraint firstAttribute="height" constant="30" id="xFX-RD-Asj"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" spellCheckingType="no" secureTextEntry="YES"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JJ9-aN-Shr">
+                                        <rect key="frame" x="126.5" y="180" width="90" height="30"/>
+                                        <color key="backgroundColor" red="0.90196078430000004" green="0.20392156859999999" blue="0.38431372549999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="90" id="duV-Gr-J1P"/>
+                                            <constraint firstAttribute="height" constant="30" id="k1E-Qv-WGo"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="21"/>
+                                        <state key="normal" title="Sign In">
+                                            <color key="titleColor" red="0.20000000000000001" green="0.2156862745" blue="0.27058823529999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="signInButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KK9-Zx-Rty"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.71372549019999998" green="0.77647058820000003" blue="0.28627450980000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.71372549019999998" green="0.77647058820000003" blue="0.28627450980000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="DiabetesWellness" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m3k-dH-5E8">
+                                <rect key="frame" x="34" y="125" width="306" height="55"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="34"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.2156862745" blue="0.27058823529999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.7803921568627451" green="0.93725490196078431" blue="0.81176470588235294" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="5ZH-4n-6Ho" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3d9-9d-0iA"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="5ZH-4n-6Ho" secondAttribute="bottom" constant="245" id="8KT-0A-9sN"/>
+                            <constraint firstItem="m3k-dH-5E8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BhF-Bc-M4q"/>
+                            <constraint firstItem="5ZH-4n-6Ho" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Epw-9I-4tf"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="5ZH-4n-6Ho" secondAttribute="trailing" id="Xb8-az-e6y"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="m3k-dH-5E8" secondAttribute="bottom" constant="487" id="ix8-Pc-mgf"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="PkV-hV-ejY" id="pV0-PY-FtI"/>
+                        <outlet property="passwordTextField" destination="o3Z-Pa-zqX" id="D21-6z-W4k"/>
+                        <outlet property="signInButton" destination="JJ9-aN-Shr" id="45f-rh-cdR"/>
+                        <outlet property="signInSelector" destination="llo-Be-Zfh" id="TaU-1y-QhB"/>
+                        <segue destination="93s-4N-KId" kind="show" identifier="GoToHome" id="KU3-yj-NdE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="21.600000000000001" y="97.601199400299862"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="FRY-4Z-rEU">
+            <objects>
+                <viewController id="93s-4N-KId" customClass="ViewController" customModule="DiabetesWellness" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aLC-4M-hcD"/>
+                        <viewControllerLayoutGuide type="bottom" id="yWh-2H-axL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fv4-FB-AXi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.65000000000000002" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What would you like to do today?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n0y-SV-0Q4">
+                                <rect key="frame" x="42" y="189" width="290" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="2gG-iL-YUc"/>
+                                    <constraint firstAttribute="width" constant="290" id="lfv-SO-wxl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="25"/>
+                                <color key="textColor" red="0.99607843139999996" green="0.37254901959999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3fD-NE-fEn">
+                                <rect key="frame" x="52" y="453" width="270" height="60"/>
+                                <color key="backgroundColor" red="0.93333333333333335" green="0.96078431372549022" blue="0.85882352941176465" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="270" id="Ab9-gI-4L8"/>
+                                    <constraint firstAttribute="height" constant="60" id="OvB-4Y-wPp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="25"/>
+                                <state key="normal" title="Track My Health">
+                                    <color key="titleColor" red="0.90196078430000004" green="0.20392156859999999" blue="0.38431372549999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="YCN-oU-Ceb" kind="show" id="RCU-Bu-25I"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XoI-3X-laG">
+                                <rect key="frame" x="52" y="336" width="270" height="60"/>
+                                <color key="backgroundColor" red="0.93333333330000001" green="0.96078431369999995" blue="0.85882352939999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="P4G-WG-f21"/>
+                                    <constraint firstAttribute="width" constant="270" id="X3P-3g-Uvq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="25"/>
+                                <state key="normal" title="Record My Health">
+                                    <color key="titleColor" red="0.90196078430000004" green="0.20392156859999999" blue="0.38431372549999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="tOO-93-07h" kind="show" id="cLq-ff-el3"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Welcome" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2FJ-bE-cIx">
+                                <rect key="frame" x="96" y="112" width="183" height="34"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="34"/>
+                                <color key="textColor" red="0.90196078430000004" green="0.20392156859999999" blue="0.38431372549999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SBF-DJ-158">
+                                <rect key="frame" x="16" y="20" width="71" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                <state key="normal" title="Sign Out">
+                                    <color key="titleColor" red="0.90196078430000004" green="0.20392156859999999" blue="0.38431372549999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="GoToHome" id="72I-FS-htz"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.78039215689999997" green="0.93725490199999995" blue="0.81176470590000005" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="2FJ-bE-cIx" firstAttribute="top" secondItem="aLC-4M-hcD" secondAttribute="bottom" constant="54" id="02c-yT-O5G"/>
+                            <constraint firstItem="yWh-2H-axL" firstAttribute="top" secondItem="3fD-NE-fEn" secondAttribute="bottom" constant="183" id="6Xy-ZA-hag"/>
+                            <constraint firstItem="3fD-NE-fEn" firstAttribute="centerX" secondItem="fv4-FB-AXi" secondAttribute="centerX" id="A9O-lv-5JE"/>
+                            <constraint firstItem="n0y-SV-0Q4" firstAttribute="centerX" secondItem="fv4-FB-AXi" secondAttribute="centerX" id="NpB-hq-7au"/>
+                            <constraint firstItem="yWh-2H-axL" firstAttribute="top" secondItem="XoI-3X-laG" secondAttribute="bottom" constant="313" id="fa5-Qq-lGz"/>
+                            <constraint firstItem="n0y-SV-0Q4" firstAttribute="top" secondItem="aLC-4M-hcD" secondAttribute="bottom" constant="169" id="ouQ-L7-dTf"/>
+                            <constraint firstItem="XoI-3X-laG" firstAttribute="centerX" secondItem="fv4-FB-AXi" secondAttribute="centerX" id="prs-gN-9SE"/>
+                            <constraint firstItem="2FJ-bE-cIx" firstAttribute="centerX" secondItem="fv4-FB-AXi" secondAttribute="centerX" id="r2w-Ij-kU4"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="signOutButton" destination="SBF-DJ-158" id="IMw-aB-0xT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VEb-Gd-md9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="888.79999999999995" y="97.601199400299862"/>
+        </scene>
+        <!--Record Page View Controller-->
+        <scene sceneID="0Nn-ro-6BL">
+            <objects>
+                <viewController id="tOO-93-07h" customClass="RecordPageViewController" customModule="DiabetesWellness" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gfJ-FI-KUg"/>
+                        <viewControllerLayoutGuide type="bottom" id="YSo-Dq-pNV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="p7N-8n-obI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VSN-p7-Lg1">
+                                <rect key="frame" x="16" y="20" width="63" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                <state key="normal" title="&lt; Back">
+                                    <color key="titleColor" red="0.22352941179999999" green="0.22352941179999999" blue="0.2274509804" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="93s-4N-KId" kind="show" id="iG3-WV-zCS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jdp-5k-f9Y">
+                                <rect key="frame" x="52" y="185" width="270" height="80"/>
+                                <color key="backgroundColor" red="0.93333333330000001" green="0.96078431369999995" blue="0.85882352939999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="270" id="EOT-a5-PPF"/>
+                                    <constraint firstAttribute="height" constant="80" id="cDb-cP-dwK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="25"/>
+                                <state key="normal" title="Food">
+                                    <color key="titleColor" red="0.90196078430000004" green="0.20392156859999999" blue="0.38431372549999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="segueToFood:" destination="tOO-93-07h" eventType="touchUpInside" id="97a-DL-VCc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5n7-WO-nmI">
+                                <rect key="frame" x="52" y="329" width="270" height="80"/>
+                                <color key="backgroundColor" red="0.93333333330000001" green="0.96078431369999995" blue="0.85882352939999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="DbQ-7h-1Ef"/>
+                                    <constraint firstAttribute="width" constant="270" id="Kjd-HV-a2y"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="25"/>
+                                <state key="normal" title="Activity">
+                                    <color key="titleColor" red="0.90196078430000004" green="0.20392156859999999" blue="0.38431372549999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="1iK-A8-v6p" kind="show" id="Acg-17-tMy"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select what you'd like to record." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Gn-Ub-etL">
+                                <rect key="frame" x="50" y="64" width="274" height="99"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="99" id="26v-wT-aY6"/>
+                                    <constraint firstAttribute="width" constant="274" id="qrq-73-KVe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="25"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.2156862745" blue="0.27058823529999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P5z-td-vHN">
+                                <rect key="frame" x="52" y="486" width="270" height="80"/>
+                                <color key="backgroundColor" red="0.93333333330000001" green="0.96078431369999995" blue="0.85882352939999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="270" id="MlW-pj-MOJ"/>
+                                    <constraint firstAttribute="height" constant="80" id="OwK-Rj-YZx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="25"/>
+                                <state key="normal" title="Medication">
+                                    <color key="titleColor" red="0.90196078430000004" green="0.20392156859999999" blue="0.38431372549999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="Maf-zq-9eC" kind="show" id="TWp-yt-V2d"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99607843139999996" green="0.37254901959999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="YSo-Dq-pNV" firstAttribute="top" secondItem="7Gn-Ub-etL" secondAttribute="bottom" constant="504" id="1xJ-c8-WFE"/>
+                            <constraint firstItem="YSo-Dq-pNV" firstAttribute="top" secondItem="P5z-td-vHN" secondAttribute="bottom" constant="93" id="90Z-3a-q6g"/>
+                            <constraint firstItem="YSo-Dq-pNV" firstAttribute="top" secondItem="jdp-5k-f9Y" secondAttribute="bottom" constant="376" id="Hsc-e4-AKr"/>
+                            <constraint firstItem="P5z-td-vHN" firstAttribute="centerX" secondItem="p7N-8n-obI" secondAttribute="centerX" id="TmN-QK-t6d"/>
+                            <constraint firstItem="YSo-Dq-pNV" firstAttribute="top" secondItem="5n7-WO-nmI" secondAttribute="bottom" constant="235" id="XZv-bh-U2v"/>
+                            <constraint firstItem="5n7-WO-nmI" firstAttribute="centerX" secondItem="p7N-8n-obI" secondAttribute="centerX" id="gLL-OM-3fW"/>
+                            <constraint firstItem="jdp-5k-f9Y" firstAttribute="centerX" secondItem="p7N-8n-obI" secondAttribute="centerX" id="p8L-za-p3f"/>
+                            <constraint firstItem="7Gn-Ub-etL" firstAttribute="centerX" secondItem="p7N-8n-obI" secondAttribute="centerX" id="zI7-MY-zhN"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <segue destination="kFg-ie-rTx" kind="show" identifier="foodSegue" id="nXh-PG-2uU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sD8-LQ-bj7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2210" y="-107"/>
+        </scene>
+        <!--Food View Controller-->
+        <scene sceneID="6kr-gc-qWU">
+            <objects>
+                <viewController id="kFg-ie-rTx" customClass="FoodViewController" customModule="DiabetesWellness" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Dbp-vK-DGG"/>
+                        <viewControllerLayoutGuide type="bottom" id="rUF-NY-czr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6Vw-Dr-tl7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Feel how your body responds to different foods." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fBf-We-G3H">
+                                <rect key="frame" x="39" y="28" width="307" height="138"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="25"/>
+                                <color key="textColor" red="0.22352941179999999" green="0.22352941179999999" blue="0.2274509804" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="I ate..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dV4-5z-rZG">
+                                <rect key="frame" x="36" y="174" width="303" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="23"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.2156862745" blue="0.27058823529999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2WN-lk-5yk">
+                                <rect key="frame" x="36" y="216" width="303" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Eating it made me feel..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="df3-5r-gAf">
+                                <rect key="frame" x="44" y="262" width="286" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="23"/>
+                                <color key="textColor" red="0.22352941179999999" green="0.22352941179999999" blue="0.2274509804" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pmK-Pp-1D8">
+                                <rect key="frame" x="39" y="300" width="90" height="102"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="75"/>
+                                <state key="normal" title="☹️"/>
+                                <connections>
+                                    <action selector="inputBadFood:" destination="kFg-ie-rTx" eventType="touchUpInside" id="eVR-qc-6SC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QdT-lH-Qlq">
+                                <rect key="frame" x="26" y="396" width="111" height="92"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="75"/>
+                                <state key="normal" title="😐"/>
+                                <connections>
+                                    <action selector="inputNeutralFood:" destination="kFg-ie-rTx" eventType="touchUpInside" id="O81-Jd-1CF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Siq-yS-XEG">
+                                <rect key="frame" x="39" y="504" width="85" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="75"/>
+                                <state key="normal" title="🙂"/>
+                                <connections>
+                                    <action selector="inputGoodFood:" destination="kFg-ie-rTx" eventType="touchUpInside" id="Qmv-fA-3iW"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="unhealthy, overstuffed, sluggish" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="244-2S-gCU">
+                                <rect key="frame" x="124" y="334" width="222" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="20"/>
+                                <color key="textColor" red="0.22352941179999999" green="0.22352941179999999" blue="0.2274509804" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="not great, but not bad" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lnn-GB-tTg">
+                                <rect key="frame" x="135" y="415" width="211" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="20"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.2156862745" blue="0.27058823529999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="healthy/satisfied/refueled" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fnM-wf-eRo">
+                                <rect key="frame" x="133" y="503" width="205" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="20"/>
+                                <color key="textColor" red="0.22352941179999999" green="0.22352941179999999" blue="0.2274509804" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="line" translatesAutoresizingMaskIntoConstraints="NO" id="7eD-Xz-neI">
+                                <rect key="frame" x="-46" y="546" width="485" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dna-Ul-A1G">
+                                <rect key="frame" x="16" y="620" width="102" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                <state key="normal" title="View ☹️">
+                                    <color key="titleColor" red="0.90196078430000004" green="0.20392156859999999" blue="0.38431372549999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="viewBadFood:" destination="kFg-ie-rTx" eventType="touchUpInside" id="5zP-aA-oSv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xJW-y2-9PV">
+                                <rect key="frame" x="145" y="619" width="102" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                <state key="normal" title="View 😐">
+                                    <color key="titleColor" red="0.90196078430000004" green="0.20392156859999999" blue="0.38431372549999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="viewNeutralFood:" destination="kFg-ie-rTx" eventType="touchUpInside" id="ZSA-LY-Tzs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nYM-Nn-bYt">
+                                <rect key="frame" x="273" y="620" width="102" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                <state key="normal" title="View 🙂">
+                                    <color key="titleColor" red="0.90196078430000004" green="0.20392156859999999" blue="0.38431372549999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="viewGoodFood:" destination="kFg-ie-rTx" eventType="touchUpInside" id="8Yj-HJ-Twc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RAV-P6-POO">
+                                <rect key="frame" x="16" y="20" width="71" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                <state key="normal" title="&lt; Back">
+                                    <color key="titleColor" red="0.90196078430000004" green="0.20392156859999999" blue="0.38431372549999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="backButtonTapped:" destination="kFg-ie-rTx" eventType="touchUpInside" id="3c2-mG-kuw"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.78039215689999997" green="0.93725490199999995" blue="0.81176470590000005" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="foodInputField" destination="2WN-lk-5yk" id="Ftl-d8-fZI"/>
+                        <segue destination="kfq-6P-lZb" kind="show" identifier="badFoodSegue" id="beT-rj-hNT"/>
+                        <segue destination="qjE-Je-CCc" kind="show" identifier="neutralFoodSegue" id="Xxf-56-chU"/>
+                        <segue destination="maC-kS-LzU" kind="show" identifier="goodFoodSegue" id="TPW-Ca-5IS"/>
+                        <segue destination="5bh-FA-dw3" kind="unwind" identifier="backToOptions" unwindAction="backToOptionsWithSegue:" id="ylc-pP-5h1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jU9-Qg-bWU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="5bh-FA-dw3" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="2208.8000000000002" y="-923.38830584707648"/>
+        </scene>
+        <!--Bad FoodVC-->
+        <scene sceneID="LLo-l9-0ht">
+            <objects>
+                <viewController id="kfq-6P-lZb" customClass="BadFoodVC" customModule="DiabetesWellness" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9SE-Hb-VRy"/>
+                        <viewControllerLayoutGuide type="bottom" id="8cn-8I-b0m"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pDH-BW-EZZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hho-OT-TeW">
+                                <rect key="frame" x="16" y="20" width="76" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                <state key="normal" title="&lt; Back">
+                                    <color key="titleColor" red="0.90196078430000004" green="0.20392156859999999" blue="0.38431372549999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="backButtonTapped:" destination="kfq-6P-lZb" eventType="touchUpInside" id="PW4-HP-83v"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5WC-NB-BtX">
+                                <rect key="frame" x="267" y="20" width="99" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                <state key="normal" title="Undo Add">
+                                    <color key="titleColor" red="0.90196078430000004" green="0.20392156859999999" blue="0.38431372549999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="undoAdd:" destination="kfq-6P-lZb" eventType="touchUpInside" id="5qK-Tj-PnR"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Foods for feeling overstuffed &amp; sluggish" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bvV-0T-K6C">
+                                <rect key="frame" x="9" y="53" width="357" height="91"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="25"/>
+                                <color key="textColor" red="0.22352941179999999" green="0.22352941179999999" blue="0.2274509804" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" keyboardDismissMode="interactive" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="VfC-0D-bvB">
+                                <rect key="frame" x="16" y="144" width="343" height="503"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.78039215689999997" green="0.93725490199999995" blue="0.81176470590000005" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="badFoodView" destination="VfC-0D-bvB" id="2Ei-KN-B5U"/>
+                        <segue destination="3jW-D2-kgI" kind="unwind" identifier="backToMenuFromBad" unwindAction="backToMenuWithSegue:" id="Ujj-kZ-020"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v89-1F-eYl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="3jW-D2-kgI" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="3394" y="-1490"/>
+        </scene>
+        <!--Neutral FoodVC-->
+        <scene sceneID="LHm-oi-bwe">
+            <objects>
+                <viewController id="qjE-Je-CCc" customClass="NeutralFoodVC" customModule="DiabetesWellness" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ZsK-zc-Xg8"/>
+                        <viewControllerLayoutGuide type="bottom" id="ShK-Hc-BGs"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="281-LN-VhD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Foods for feeling &quot;eh&quot;" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P7v-fu-KUh">
+                                <rect key="frame" x="9" y="52" width="357" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="25"/>
+                                <color key="textColor" red="0.22352941179999999" green="0.22352941179999999" blue="0.2274509804" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F6f-Yc-P5f">
+                                <rect key="frame" x="260" y="28" width="99" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                <state key="normal" title="Undo Add">
+                                    <color key="titleColor" red="0.90196078430000004" green="0.20392156859999999" blue="0.38431372549999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="undoAdd:" destination="kfq-6P-lZb" eventType="touchUpInside" id="TJF-K9-M2N"/>
+                                    <action selector="undoAdd:" destination="qjE-Je-CCc" eventType="touchUpInside" id="YtQ-Xo-XWR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OWK-Z0-C5z">
+                                <rect key="frame" x="16" y="28" width="76" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                <state key="normal" title="&lt; Back">
+                                    <color key="titleColor" red="0.90196078430000004" green="0.20392156859999999" blue="0.38431372549999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="backButtonTapped:" destination="kfq-6P-lZb" eventType="touchUpInside" id="gO5-ij-Ios"/>
+                                    <action selector="backButtonTapped:" destination="qjE-Je-CCc" eventType="touchUpInside" id="nGU-KP-EWw"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" keyboardDismissMode="interactive" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="dG3-GH-uvy">
+                                <rect key="frame" x="16" y="128" width="343" height="519"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.78039215689999997" green="0.93725490199999995" blue="0.81176470590000005" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="neutralFoodView" destination="dG3-GH-uvy" id="dD4-aS-VGG"/>
+                        <segue destination="wnd-8g-d5Y" kind="unwind" identifier="backToMenuFromNeutral" unwindAction="backToMenuWithSegue:" id="nKY-oe-laF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c5k-kk-4Ms" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="wnd-8g-d5Y" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="4226" y="-1490"/>
+        </scene>
+        <!--Good FoodVC-->
+        <scene sceneID="A7f-pq-26x">
+            <objects>
+                <viewController id="maC-kS-LzU" customClass="GoodFoodVC" customModule="DiabetesWellness" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WFw-UG-hBM"/>
+                        <viewControllerLayoutGuide type="bottom" id="zn3-aM-Awn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Il6-be-mQS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" keyboardDismissMode="interactive" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="3V7-yK-QfA">
+                                <rect key="frame" x="16" y="143" width="343" height="440"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ulu-ei-ywU">
+                                <rect key="frame" x="303" y="591" width="56" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="facebook"/>
+                                <connections>
+                                    <action selector="shareToFacebook:" destination="maC-kS-LzU" eventType="touchUpInside" id="cxp-BI-wcf"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Foods for feeling satisfied &amp; refueled" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kxj-9F-tnO">
+                                <rect key="frame" x="5" y="42" width="364" height="93"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="25"/>
+                                <color key="textColor" red="0.22352941179999999" green="0.22352941179999999" blue="0.2274509804" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0m9-hO-1Yg">
+                                <rect key="frame" x="16" y="20" width="76" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                <state key="normal" title="&lt; Back">
+                                    <color key="titleColor" red="0.90196078430000004" green="0.20392156859999999" blue="0.38431372549999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="backButtonTapped:" destination="maC-kS-LzU" eventType="touchUpInside" id="Mh9-qT-nnO"/>
+                                    <action selector="backButtonTapped:" destination="qjE-Je-CCc" eventType="touchUpInside" id="iT4-YR-gvM"/>
+                                    <action selector="backButtonTapped:" destination="kfq-6P-lZb" eventType="touchUpInside" id="wQS-h3-mSU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vVS-DZ-7BM">
+                                <rect key="frame" x="270" y="20" width="99" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                <state key="normal" title="Undo Add">
+                                    <color key="titleColor" red="0.90196078430000004" green="0.20392156859999999" blue="0.38431372549999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="undoAdd:" destination="maC-kS-LzU" eventType="touchUpInside" id="MeR-8q-WHH"/>
+                                    <action selector="undoAdd:" destination="kfq-6P-lZb" eventType="touchUpInside" id="O48-EU-YIN"/>
+                                    <action selector="undoAdd:" destination="qjE-Je-CCc" eventType="touchUpInside" id="Yee-dh-yBy"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.78039215689999997" green="0.93725490199999995" blue="0.81176470590000005" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="goodFoodView" destination="3V7-yK-QfA" id="Eg7-0k-Nyd"/>
+                        <segue destination="WBa-Fl-YKc" kind="unwind" identifier="backToMenuFromGood" unwindAction="backToMenuWithSegue:" id="svC-kp-V2p"/>
+                        <segue destination="WVx-vt-7q4" kind="show" identifier="shareSegue" id="5T7-HE-n6j"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eoM-Kk-qn7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="WBa-Fl-YKc" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="5140" y="-1490"/>
+        </scene>
+        <!--ShareVC-->
+        <scene sceneID="37Q-xB-KdB">
+            <objects>
+                <viewController id="WVx-vt-7q4" customClass="ShareVC" customModule="DiabetesWellness" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="NOu-GG-m6U"/>
+                        <viewControllerLayoutGuide type="bottom" id="tTC-j1-V3K"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kOr-AY-EG1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5kh-mA-Lmb">
+                                <rect key="frame" x="16" y="20" width="77" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                <state key="normal" title="&lt; Back">
+                                    <color key="titleColor" red="0.90196078430000004" green="0.20392156859999999" blue="0.38431372549999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="backButtonTapped:" destination="WVx-vt-7q4" eventType="touchUpInside" id="BKf-ia-fWc"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Post:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZnS-Ip-my8">
+                                <rect key="frame" x="135" y="50" width="104" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="25"/>
+                                <color key="textColor" red="0.22352941179999999" green="0.22352941179999999" blue="0.2274509804" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="mlR-0p-XAb">
+                                <rect key="frame" x="16" y="105" width="343" height="132"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vl3-Ym-d98">
+                                <rect key="frame" x="303" y="591" width="56" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="facebook"/>
+                                <connections>
+                                    <action selector="upload:" destination="WVx-vt-7q4" eventType="touchUpInside" id="2dz-ZW-pG6"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cob-si-byO">
+                                <rect key="frame" x="16" y="291" width="343" height="276"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6gU-M7-MOv">
+                                <rect key="frame" x="97" y="245" width="180" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="20"/>
+                                <state key="normal" title="Select an image">
+                                    <color key="titleColor" red="0.90196078430000004" green="0.20392156859999999" blue="0.38431372549999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="selectImage:" destination="WVx-vt-7q4" eventType="touchUpInside" id="wmj-uX-Een"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.78039215689999997" green="0.93725490199999995" blue="0.81176470590000005" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="foodTextView" destination="mlR-0p-XAb" id="9RM-Da-VKY"/>
+                        <outlet property="imageView" destination="cob-si-byO" id="zat-ZY-2Nl"/>
+                        <segue destination="tPa-Yn-GtC" kind="unwind" identifier="backToGoodList" unwindAction="backToGoodListWithSegue:" id="FcY-38-uVp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oI5-Kr-RgU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="tPa-Yn-GtC" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="5140" y="-732"/>
+        </scene>
+        <!--Activity Button View Controller-->
+        <scene sceneID="HxE-hO-Spr">
+            <objects>
+                <viewController id="1iK-A8-v6p" customClass="ActivityButtonViewController" customModule="DiabetesWellness" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8jF-zh-DMA"/>
+                        <viewControllerLayoutGuide type="bottom" id="vjp-Tu-we6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="W2s-NG-H7g">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OBU-8p-6zf">
+                                <rect key="frame" x="52" y="331" width="270" height="80"/>
+                                <color key="backgroundColor" red="0.93333333330000001" green="0.96078431369999995" blue="0.85882352939999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="kOE-yY-l0R"/>
+                                    <constraint firstAttribute="width" constant="270" id="ne0-mO-kLp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="25"/>
+                                <state key="normal" title="Strength exercise">
+                                    <color key="titleColor" red="0.90196078430000004" green="0.20392156859999999" blue="0.38431372549999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="StrengthButton:" destination="1iK-A8-v6p" eventType="touchUpInside" id="SHf-VM-xKp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wC3-ak-Lcb">
+                                <rect key="frame" x="52" y="185" width="270" height="80"/>
+                                <color key="backgroundColor" red="0.93333333330000001" green="0.96078431369999995" blue="0.85882352939999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="gbK-Bh-7gh"/>
+                                    <constraint firstAttribute="width" constant="270" id="sek-VN-4dB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="25"/>
+                                <state key="normal" title="Aerobic exercise">
+                                    <color key="titleColor" red="0.90196078430000004" green="0.20392156859999999" blue="0.38431372549999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="AerobicButton:" destination="1iK-A8-v6p" eventType="touchUpInside" id="ovU-6m-itM"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What activity did you just complete?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dlD-XW-FCX">
+                                <rect key="frame" x="50" y="62" width="274" height="99"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="274" id="pJD-8r-c1F"/>
+                                    <constraint firstAttribute="height" constant="99" id="vZj-2R-B7Y"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="25"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.2156862745" blue="0.27058823529999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bwI-L9-ph2">
+                                <rect key="frame" x="16" y="20" width="56" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                <state key="normal" title="&lt; Back">
+                                    <color key="titleColor" red="0.22352941179999999" green="0.22352941179999999" blue="0.2274509804" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="tOO-93-07h" kind="show" id="lxn-vS-zOT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PRt-hC-xfP">
+                                <rect key="frame" x="52" y="484" width="270" height="80"/>
+                                <color key="backgroundColor" red="0.93333333330000001" green="0.96078431369999995" blue="0.85882352939999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="6gA-aT-put"/>
+                                    <constraint firstAttribute="width" constant="270" id="CnS-s8-NNg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="25"/>
+                                <state key="normal" title="A nap">
+                                    <color key="titleColor" red="0.90196078430000004" green="0.20392156859999999" blue="0.38431372549999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="NapButton:" destination="1iK-A8-v6p" eventType="touchUpInside" id="U4k-TT-b8K"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99607843139999996" green="0.37254901959999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="PRt-hC-xfP" firstAttribute="centerX" secondItem="W2s-NG-H7g" secondAttribute="centerX" id="71P-9w-SfQ"/>
+                            <constraint firstItem="dlD-XW-FCX" firstAttribute="centerX" secondItem="W2s-NG-H7g" secondAttribute="centerX" id="Bir-PT-a24"/>
+                            <constraint firstItem="wC3-ak-Lcb" firstAttribute="centerX" secondItem="W2s-NG-H7g" secondAttribute="centerX" id="JUz-5x-Xcf"/>
+                            <constraint firstItem="vjp-Tu-we6" firstAttribute="top" secondItem="wC3-ak-Lcb" secondAttribute="bottom" constant="402" id="Qj0-uV-YDA"/>
+                            <constraint firstItem="vjp-Tu-we6" firstAttribute="top" secondItem="dlD-XW-FCX" secondAttribute="bottom" constant="506" id="W5N-Im-AKY"/>
+                            <constraint firstItem="vjp-Tu-we6" firstAttribute="top" secondItem="PRt-hC-xfP" secondAttribute="bottom" constant="100" id="b1S-do-VAY"/>
+                            <constraint firstItem="vjp-Tu-we6" firstAttribute="top" secondItem="OBU-8p-6zf" secondAttribute="bottom" constant="256" id="pC5-3b-5sp"/>
+                            <constraint firstItem="OBU-8p-6zf" firstAttribute="centerX" secondItem="W2s-NG-H7g" secondAttribute="centerX" id="woJ-Vu-hRz"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="AerobicButton" destination="wC3-ak-Lcb" id="V8C-DZ-VbU"/>
+                        <outlet property="NapButton" destination="PRt-hC-xfP" id="SjS-YR-RCc"/>
+                        <outlet property="StrengthButton" destination="OBU-8p-6zf" id="p3f-I9-iXo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qea-XL-SFn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2837.5999999999999" y="-107.49625187406298"/>
+        </scene>
+        <!--Meds Button View Controller-->
+        <scene sceneID="a2n-of-fcW">
+            <objects>
+                <viewController id="Maf-zq-9eC" customClass="MedsButtonViewController" customModule="DiabetesWellness" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ias-mJ-7pz"/>
+                        <viewControllerLayoutGuide type="bottom" id="g15-9K-MJO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="46t-JT-K2Q">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5W0-Cm-l53">
+                                <rect key="frame" x="52" y="187" width="270" height="80"/>
+                                <color key="backgroundColor" red="0.93333333330000001" green="0.96078431369999995" blue="0.85882352939999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="DOH-Ku-8tN"/>
+                                    <constraint firstAttribute="width" constant="270" id="xzZ-KE-qja"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="25"/>
+                                <state key="normal" title="Normal dose">
+                                    <color key="titleColor" red="0.90196078430000004" green="0.20392156859999999" blue="0.38431372549999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="NormalButton:" destination="Maf-zq-9eC" eventType="touchUpInside" id="u88-Vd-nG0"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What doses would you like to record?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dR6-K1-z9G">
+                                <rect key="frame" x="50.5" y="62" width="274" height="99"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="99" id="MLz-Ke-vfy"/>
+                                    <constraint firstAttribute="width" constant="274" id="aOK-tV-Yuo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="25"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.2156862745" blue="0.27058823529999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cMH-yF-84b">
+                                <rect key="frame" x="16" y="20" width="56" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                <state key="normal" title="&lt; Back">
+                                    <color key="titleColor" red="0.20000000000000001" green="0.2156862745" blue="0.27058823529999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="tOO-93-07h" kind="show" id="YFb-OD-DRb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ldK-bk-TqS">
+                                <rect key="frame" x="52" y="326" width="270" height="80"/>
+                                <color key="backgroundColor" red="0.93333333330000001" green="0.96078431369999995" blue="0.85882352939999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="270" id="28W-y9-W5y"/>
+                                    <constraint firstAttribute="height" constant="80" id="EEk-mk-aqp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="25"/>
+                                <state key="normal" title="Emergency dose">
+                                    <color key="titleColor" red="0.90196078430000004" green="0.20392156859999999" blue="0.38431372549999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="EmergencyButton:" destination="Maf-zq-9eC" eventType="touchUpInside" id="jda-0o-Stf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iVM-Ei-Q2W">
+                                <rect key="frame" x="52" y="479" width="270" height="80"/>
+                                <color key="backgroundColor" red="0.93333333330000001" green="0.96078431369999995" blue="0.85882352939999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="270" id="UNP-0r-8dC"/>
+                                    <constraint firstAttribute="height" constant="80" id="jDt-aI-PN2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="24"/>
+                                <state key="normal" title="Forgot dose yesterday">
+                                    <color key="titleColor" red="0.90196078430000004" green="0.20392156859999999" blue="0.38431372549999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="ForgotButton:" destination="Maf-zq-9eC" eventType="touchUpInside" id="Zdo-Jj-Yjj"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99607843139999996" green="0.37254901959999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="g15-9K-MJO" firstAttribute="top" secondItem="dR6-K1-z9G" secondAttribute="bottom" constant="506" id="K9p-1Z-plb"/>
+                            <constraint firstItem="g15-9K-MJO" firstAttribute="top" secondItem="5W0-Cm-l53" secondAttribute="bottom" constant="404" id="Pum-dt-BF8"/>
+                            <constraint firstItem="g15-9K-MJO" firstAttribute="top" secondItem="iVM-Ei-Q2W" secondAttribute="bottom" constant="109" id="Usg-oj-T47"/>
+                            <constraint firstItem="g15-9K-MJO" firstAttribute="top" secondItem="ldK-bk-TqS" secondAttribute="bottom" constant="258" id="YRc-rq-BXK"/>
+                            <constraint firstItem="5W0-Cm-l53" firstAttribute="centerX" secondItem="46t-JT-K2Q" secondAttribute="centerX" id="ar3-ZX-pbh"/>
+                            <constraint firstItem="ldK-bk-TqS" firstAttribute="centerX" secondItem="46t-JT-K2Q" secondAttribute="centerX" id="oU9-gm-eQ9"/>
+                            <constraint firstItem="iVM-Ei-Q2W" firstAttribute="centerX" secondItem="46t-JT-K2Q" secondAttribute="centerX" id="pdS-q4-Wg6"/>
+                            <constraint firstItem="dR6-K1-z9G" firstAttribute="centerX" secondItem="46t-JT-K2Q" secondAttribute="centerX" id="sac-CM-K9N"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="EmergencyButton" destination="ldK-bk-TqS" id="0pZ-6o-lAY"/>
+                        <outlet property="ForgotButton" destination="iVM-Ei-Q2W" id="L4o-L3-0RE"/>
+                        <outlet property="NormalButton" destination="5W0-Cm-l53" id="6el-2c-0aP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kc9-Ms-at8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3474" y="-107"/>
+        </scene>
+        <!--Track Page View Controller-->
+        <scene sceneID="rEy-By-EGw">
+            <objects>
+                <viewController id="YCN-oU-Ceb" customClass="TrackPageViewController" customModule="DiabetesWellness" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Q0H-aN-RfG"/>
+                        <viewControllerLayoutGuide type="bottom" id="Vj5-qu-pWl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lWl-SK-msk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o6h-yl-3Ol">
+                                <rect key="frame" x="52" y="199" width="270" height="80"/>
+                                <color key="backgroundColor" red="0.99607843139999996" green="0.37254901959999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="270" id="IVy-I0-5wZ"/>
+                                    <constraint firstAttribute="height" constant="80" id="xJm-Tn-EqR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="25"/>
+                                <state key="normal" title="Glucose">
+                                    <color key="titleColor" red="0.22352941179999999" green="0.22352941179999999" blue="0.2274509804" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="pef-iW-bUd" kind="show" id="98j-OP-aae"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2p6-b2-Iia">
+                                <rect key="frame" x="52" y="470" width="270" height="80"/>
+                                <color key="backgroundColor" red="0.99607843139999996" green="0.37254901959999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="JpL-Mc-1q9"/>
+                                    <constraint firstAttribute="width" constant="270" id="opI-i4-4lJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="25"/>
+                                <state key="normal" title="Weight">
+                                    <color key="titleColor" red="0.22352941179999999" green="0.22352941179999999" blue="0.2274509804" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="5qj-I8-Hs9" kind="show" id="a7P-9R-WhQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mag-Pm-Qv9">
+                                <rect key="frame" x="16" y="20" width="56" height="34"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                <state key="normal" title="&lt; Back">
+                                    <color key="titleColor" red="0.99607843139999996" green="0.37254901959999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="93s-4N-KId" kind="show" id="oFS-An-Vuc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wii-SD-fQz">
+                                <rect key="frame" x="52" y="332" width="270" height="80"/>
+                                <color key="backgroundColor" red="0.99607843139999996" green="0.37254901959999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="270" id="7mo-Gz-5eY"/>
+                                    <constraint firstAttribute="height" constant="80" id="bnd-L9-QOW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="25"/>
+                                <state key="normal" title="Activity">
+                                    <color key="titleColor" red="0.22352941179999999" green="0.22352941179999999" blue="0.2274509804" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="4gD-i9-Jsg" kind="show" id="e5N-Bn-4rk"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Select what you'd like to track." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GYW-Kz-6dE">
+                                <rect key="frame" x="53" y="62" width="269" height="99"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="25"/>
+                                <color key="textColor" red="0.90196078430000004" green="0.20392156859999999" blue="0.38431372549999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93333333330000001" green="0.96078431369999995" blue="0.85882352939999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="GYW-Kz-6dE" firstAttribute="centerX" secondItem="lWl-SK-msk" secondAttribute="centerX" id="3Sc-iF-WAC"/>
+                            <constraint firstItem="Mag-Pm-Qv9" firstAttribute="top" secondItem="Q0H-aN-RfG" secondAttribute="bottom" id="65q-Km-MdD"/>
+                            <constraint firstItem="Vj5-qu-pWl" firstAttribute="top" secondItem="o6h-yl-3Ol" secondAttribute="bottom" constant="388" id="8nb-5z-8ob"/>
+                            <constraint firstItem="2p6-b2-Iia" firstAttribute="centerX" secondItem="lWl-SK-msk" secondAttribute="centerX" id="GKQ-im-X4o"/>
+                            <constraint firstItem="Vj5-qu-pWl" firstAttribute="top" secondItem="2p6-b2-Iia" secondAttribute="bottom" constant="109" id="Hja-uS-WYE"/>
+                            <constraint firstItem="Vj5-qu-pWl" firstAttribute="top" secondItem="wii-SD-fQz" secondAttribute="bottom" constant="258" id="W25-n4-10I"/>
+                            <constraint firstItem="Vj5-qu-pWl" firstAttribute="top" secondItem="GYW-Kz-6dE" secondAttribute="bottom" constant="527" id="gDQ-Hp-Taw"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="Mag-Pm-Qv9" secondAttribute="leading" id="k6J-ul-4N8"/>
+                            <constraint firstItem="wii-SD-fQz" firstAttribute="centerX" secondItem="lWl-SK-msk" secondAttribute="centerX" id="tBm-Pm-f5B"/>
+                            <constraint firstItem="o6h-yl-3Ol" firstAttribute="centerX" secondItem="lWl-SK-msk" secondAttribute="centerX" id="v93-Ta-hNy"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7gY-gJ-rM8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2208.8000000000002" y="671.51424287856082"/>
+        </scene>
+        <!--Glucose Tab View Controller-->
+        <scene sceneID="mEK-GB-NTA">
+            <objects>
+                <viewController id="pef-iW-bUd" customClass="GlucoseTabViewController" customModule="DiabetesWellness" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4hh-B1-d9C"/>
+                        <viewControllerLayoutGuide type="bottom" id="ppP-Yo-WbJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jw2-zd-E0f">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fgc-Jt-8gc">
+                                <rect key="frame" x="16" y="20" width="56" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                <state key="normal" title="&lt; Back">
+                                    <color key="titleColor" red="0.99607843139999996" green="0.37254901959999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="YCN-oU-Ceb" kind="show" id="uj5-Qn-Squ"/>
+                                </connections>
+                            </button>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iq4-Lt-Q2X">
+                                <rect key="frame" x="30" y="83" width="315" height="500"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="315" id="2iV-fC-wK1"/>
+                                    <constraint firstAttribute="height" constant="500" id="gPo-AW-3Tu"/>
+                                </constraints>
+                            </webView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gmo-FZ-SC1">
+                                <rect key="frame" x="30" y="591" width="315" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="Ojr-Dn-1ba"/>
+                                    <constraint firstAttribute="width" constant="315" id="Zm1-9X-YbR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="20"/>
+                                <state key="normal" title="Open in Safari" image="safari">
+                                    <color key="titleColor" red="0.20000000000000001" green="0.2156862745" blue="0.27058823529999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="Safari:" destination="pef-iW-bUd" eventType="touchUpInside" id="g9R-Gm-6ca"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Glucose Trends" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a4t-M3-fjw">
+                                <rect key="frame" x="78" y="20" width="219" height="45"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="25"/>
+                                <color key="textColor" red="0.22352941179999999" green="0.22352941179999999" blue="0.2274509804" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93333333330000001" green="0.96078431369999995" blue="0.85882352939999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="ppP-Yo-WbJ" firstAttribute="top" secondItem="a4t-M3-fjw" secondAttribute="bottom" constant="602" id="6Bj-It-0aX"/>
+                            <constraint firstItem="a4t-M3-fjw" firstAttribute="centerX" secondItem="jw2-zd-E0f" secondAttribute="centerX" id="B7H-jj-lio"/>
+                            <constraint firstItem="iq4-Lt-Q2X" firstAttribute="centerX" secondItem="jw2-zd-E0f" secondAttribute="centerX" id="S1S-UI-p7O"/>
+                            <constraint firstItem="Gmo-FZ-SC1" firstAttribute="centerX" secondItem="jw2-zd-E0f" secondAttribute="centerX" id="WHQ-fF-JRV"/>
+                            <constraint firstItem="ppP-Yo-WbJ" firstAttribute="top" secondItem="iq4-Lt-Q2X" secondAttribute="bottom" constant="84" id="XGH-wz-SBI"/>
+                            <constraint firstItem="ppP-Yo-WbJ" firstAttribute="top" secondItem="Gmo-FZ-SC1" secondAttribute="bottom" constant="20" id="cOd-F4-dZ7"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="TabView" destination="iq4-Lt-Q2X" id="7UI-hU-Cag"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MCp-Zx-Hff" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2944.8000000000002" y="671.51424287856082"/>
+        </scene>
+        <!--Activity Tab View Controller-->
+        <scene sceneID="UTh-PD-w5a">
+            <objects>
+                <viewController id="4gD-i9-Jsg" customClass="ActivityTabViewController" customModule="DiabetesWellness" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2zZ-cR-EFR"/>
+                        <viewControllerLayoutGuide type="bottom" id="mjq-D1-tzS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="doD-xA-o6G">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jUs-oJ-KY9">
+                                <rect key="frame" x="16" y="20" width="56" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                <state key="normal" title="&lt; Back">
+                                    <color key="titleColor" red="0.99607843139999996" green="0.37254901959999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="YCN-oU-Ceb" kind="show" id="syS-FY-iTF"/>
+                                </connections>
+                            </button>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6f2-mh-tOm">
+                                <rect key="frame" x="29.5" y="70" width="315" height="500"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="500" id="MHD-Tb-uiB"/>
+                                    <constraint firstAttribute="width" constant="315" id="mZd-b5-Acq"/>
+                                </constraints>
+                            </webView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I0n-7K-Dl7">
+                                <rect key="frame" x="23" y="589" width="329" height="58"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="58" id="5m2-cG-3Gi"/>
+                                    <constraint firstAttribute="width" constant="329" id="7bU-o9-cAh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="20"/>
+                                <state key="normal" title="Open in Safari" image="safari">
+                                    <color key="titleColor" red="0.20000000000000001" green="0.2156862745" blue="0.27058823529999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="Safari:" destination="4gD-i9-Jsg" eventType="touchUpInside" id="EN0-7A-yYP"/>
+                                    <action selector="Safari:" destination="pef-iW-bUd" eventType="touchUpInside" id="LXd-92-ahX"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Activity Trends" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e1R-mm-1oh">
+                                <rect key="frame" x="77" y="20" width="221" height="40"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="25"/>
+                                <color key="textColor" red="0.22352941179999999" green="0.22352941179999999" blue="0.2274509804" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93333333330000001" green="0.96078431369999995" blue="0.85882352939999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="e1R-mm-1oh" firstAttribute="centerX" secondItem="doD-xA-o6G" secondAttribute="centerX" id="1NZ-2y-UUf"/>
+                            <constraint firstItem="6f2-mh-tOm" firstAttribute="centerX" secondItem="doD-xA-o6G" secondAttribute="centerX" id="Ccu-1s-hvC"/>
+                            <constraint firstItem="mjq-D1-tzS" firstAttribute="top" secondItem="e1R-mm-1oh" secondAttribute="bottom" constant="607" id="FTf-Kt-vZf"/>
+                            <constraint firstItem="I0n-7K-Dl7" firstAttribute="centerX" secondItem="doD-xA-o6G" secondAttribute="centerX" id="XMm-gR-S6U"/>
+                            <constraint firstItem="mjq-D1-tzS" firstAttribute="top" secondItem="6f2-mh-tOm" secondAttribute="bottom" constant="97" id="uAA-fw-v9A"/>
+                            <constraint firstItem="mjq-D1-tzS" firstAttribute="top" secondItem="I0n-7K-Dl7" secondAttribute="bottom" constant="20" id="xzM-xs-pFz"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="TabView" destination="6f2-mh-tOm" id="AnP-aK-2xo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EyM-0f-b3k" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3644" y="671.51424287856082"/>
+        </scene>
+        <!--Weight Tab View Controller-->
+        <scene sceneID="nDW-W0-Udo">
+            <objects>
+                <viewController id="5qj-I8-Hs9" customClass="WeightTabViewController" customModule="DiabetesWellness" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kRA-Gi-Akp"/>
+                        <viewControllerLayoutGuide type="bottom" id="VIl-zr-Mcj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="T0e-os-8ir">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QbB-cG-XRt">
+                                <rect key="frame" x="16" y="18" width="67" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                <state key="normal" title="&lt; Back">
+                                    <color key="titleColor" red="0.99607843139999996" green="0.37254901959999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="YCN-oU-Ceb" kind="show" id="U0b-vZ-eFr"/>
+                                </connections>
+                            </button>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P4n-jK-77X">
+                                <rect key="frame" x="30" y="83" width="315" height="500"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="315" id="OOZ-nl-gua"/>
+                                    <constraint firstAttribute="height" constant="500" id="W2S-Jw-djy"/>
+                                </constraints>
+                            </webView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Weight Trends" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ga-X8-Ual">
+                                <rect key="frame" x="85" y="20" width="204" height="36"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="25"/>
+                                <color key="textColor" red="0.22352941179999999" green="0.22352941179999999" blue="0.2274509804" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rUk-mE-9sh">
+                                <rect key="frame" x="30" y="591" width="315" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="315" id="6Ef-Op-Xag"/>
+                                    <constraint firstAttribute="height" constant="56" id="Qjw-gZ-iLE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="20"/>
+                                <state key="normal" title="Open in Safari" image="safari">
+                                    <color key="titleColor" red="0.20000000000000001" green="0.2156862745" blue="0.27058823529999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="Safari:" destination="5qj-I8-Hs9" eventType="touchUpInside" id="Kkq-rt-FY5"/>
+                                    <action selector="Safari:" destination="pef-iW-bUd" eventType="touchUpInside" id="y1X-z6-SFs"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93333333330000001" green="0.96078431369999995" blue="0.85882352939999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="rUk-mE-9sh" firstAttribute="centerX" secondItem="T0e-os-8ir" secondAttribute="centerX" id="JeQ-Hw-nHG"/>
+                            <constraint firstItem="VIl-zr-Mcj" firstAttribute="top" secondItem="P4n-jK-77X" secondAttribute="bottom" constant="84" id="O6T-1S-CXA"/>
+                            <constraint firstItem="2ga-X8-Ual" firstAttribute="centerX" secondItem="T0e-os-8ir" secondAttribute="centerX" id="pxP-Rx-szP"/>
+                            <constraint firstItem="P4n-jK-77X" firstAttribute="centerX" secondItem="T0e-os-8ir" secondAttribute="centerX" id="vR7-37-WXl"/>
+                            <constraint firstItem="VIl-zr-Mcj" firstAttribute="top" secondItem="2ga-X8-Ual" secondAttribute="bottom" constant="611" id="w7n-zI-UX5"/>
+                            <constraint firstItem="VIl-zr-Mcj" firstAttribute="top" secondItem="rUk-mE-9sh" secondAttribute="bottom" constant="20" id="xsC-oj-hQv"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="TabView" destination="P4n-jK-77X" id="G3c-Pe-Shb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P9P-ur-oUO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4389.6000000000004" y="671.51424287856082"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="facebook" width="125" height="125"/>
+        <image name="line" width="960" height="260"/>
+        <image name="safari" width="25" height="25"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="cLq-ff-el3"/>
+        <segue reference="KU3-yj-NdE"/>
+        <segue reference="syS-FY-iTF"/>
+    </inferredMetricsTieBreakers>
+</document>
